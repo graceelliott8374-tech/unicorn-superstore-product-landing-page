@@ -1,324 +1,582 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A whimsical Unicorn Superstore product landing page featuring product previews, a custom video, and interactive details."
+    />
     <title>Unicorn Superstore</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
 
-<!-- start of header -->
-<header id="header" >
+  <body>
+    <header id="header">
+      <div class="topnav">
+        <nav id="nav_bar" aria-label="Primary navigation">
+          <ul>
+            <li><a class="active nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#products">Products</a></li>
+            <li><a class="nav-link" href="#orders">Orders</a></li>
+            <li><a class="nav-link" href="#contacts">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  <!-- navbar -->
-<div class="topnav">
+      <div class="hero">
+        <div id="emoji" class="hero-title">
+          <span class="uni1" aria-hidden="true">&#129412;</span>
+          <h1 id="home" class="glow">Unicorn Superstore</h1>
+          <span class="uni2" aria-hidden="true">&#129412;</span>
+        </div>
 
-  <nav id="nav_bar"  class="content" onscroll="myFunction()">
-      <ul >
-          <li> <a class="active" href="#home" class="nav-link">Home</a></li>
-          <li> <a href="#about" class="nav-link">About</a></li>
-          <li> <a href="#products" class="nav-link">Products</a></li>
-          <li> <a href="#orders" class="nav-link">Orders</a></li>
-          <li> <a href="#contacts" class="nav-link">Contact Us</a></li>
-      </ul>
-  </nav>
-  </div>
-  <!-- end of topnav div -->
+        <img
+          src="./assets/images/alicornhorn.jpg"
+          id="header-img"
+          alt="A horse decorated with flowers and a unicorn horn"
+        />
+      </div>
+    </header>
 
-<!-- glowing letters and unicorns -->
-<div id="emoji">
-   <span class="uni1">&#129412;</span> <h1 id="home" class="glow" >Unicorn Superstore</h1><span class="uni2">&#129412;</span>
-</div>
-    <!-- header image -->
-    <img src="./assets/images/alicornhorn.jpg" id="header-img" alt="a horse dressed with a horn">
+    <main>
+      <section class="video-section" aria-labelledby="video-heading">
+        <h2 id="video-heading" class="h4_1">Learn About Our Products!</h2>
+        <div class="video-wrapper">
+          <video id="video" class="uni_video" controls preload="metadata">
+            <source
+              src="./assets/video/Unicorn Superstore.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </section>
 
-</header>
-<!-- end of header -->
+      <section class="about" aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>
+          Welcome to the Unicorn Superstore! If you are looking for anything
+          related to unicorns, we have it. We specialize in those special people
+          who dance to the sound of unicorn hooves instead of drums, who dare to
+          dream and believe, and who celebrate their own uniqueness and the
+          uniqueness of their fellow unicorns.
+        </p>
+        <p>
+          Founded by Aurora WillowDancer, Unicorn Superstore offers everything
+          from the realm of the fantastic, including catering and baking
+          supplies, party favors, pet costumes, and child- and adult-sized
+          clothes. If you are looking for the whimsical and magical, you have
+          come to the right place.
+        </p>
 
-<!-- video div -->
-<h4 class="h4_1">Learn About Our Products!</h4>
-<div class="uni_video">
+        <h3 class="h3_1">See our most popular products</h3>
 
-<video id="video" controls>
-    <source src="./assets/video/Unicorn Superstore.mp4" type="video/mp4">
-</video>
-</div>
-<!-- end of video div -->
+        <div class="img-flex">
+          <figure class="tooltip" tabindex="0">
+            <img
+              src="./assets/images/partypinata.jpg"
+              alt="A unicorn party pinata"
+              class="img1"
+            />
+            <figcaption class="tooltiptext">Party Pinata — $5</figcaption>
+          </figure>
 
-<!-- start of about section -->
-<div class="about">
-<h2 id="about">About </h2>
-    <p>Welcome to the Unicorn Superstore! If you are looking for anything related to unicorns, we have it! We specialize in those special people who dance to the sound of unicorn hooves instead of drums; who dare to dream and believe; who marvel at their own uniqueness and take joy in the uniqueness of their fellow unicorns.</p>
-    <p>Founded by Aurora WillowDancer, Unicorn Superstore offers everything from the realm of the fantastic, including catering and baking supplies, party favors, pet costumes, and child- and adult-sized clothes. If you are looking for the whimsical and magical, you've come to the right place.</p>
-</div>
+          <figure class="tooltip" tabindex="0">
+            <img
+              src="./assets/images/oraclecardssmall.jpg"
+              alt="A unicorn oracle card"
+              class="img2"
+            />
+            <figcaption class="tooltiptext">Oracle Deck — $25</figcaption>
+          </figure>
 
-    <h3 class="h3_1">See below for our most popular products!</h3>
+          <figure class="tooltip" tabindex="0">
+            <img
+              src="./assets/images/poolfloatie.jpg"
+              alt="A unicorn pool float"
+              class="img3"
+            />
+            <figcaption class="tooltiptext">Pool Float — $8</figcaption>
+          </figure>
 
-    <div class="img-flex">
-        <div class="tooltip"><span class="tooltiptext">Party Pinata $5</span>
-        <img src="./assets/images/partypinata.jpg" alt="a unicorn party pinata" class="img1">
-    </div>
-    <div class="tooltip"><span class="tooltiptext">Oracle Deck $25</span>
-        <img src="./assets/images/oraclecards.jpg" alt="a unicorn oracle card" class="img2">
-    </div>
-    <div class="tooltip"><span class="tooltiptext">Pool Floatie $8</span>
-        <img src="./assets/images/poolfloatie.jpg" alt="a unicorn pool floatie" class="img3">
-    </div>
-    <div class="tooltip"><span class="tooltiptext">Pet Costume $15</span>
-        <img src="./assets/images/petcostume.jpg" alt="a dog dressed as a unicorn" class="img4">
-    </div>
-    </div>
+          <figure class="tooltip" tabindex="0">
+            <img
+              src="./assets/images/petcostume.jpg"
+              alt="A dog dressed as a unicorn"
+              class="img4"
+            />
+            <figcaption class="tooltiptext">Pet Costume — $15</figcaption>
+          </figure>
+        </div>
+      </section>
 
-<!-- start of products section -->
-<h2 id="products"> Products</h2>
-    <p>Please view our products to see what you like and what you absolutely can't live without. Aren't they the same thing? When it comes to unicorns, you can never have too much stuff.</p>
+      <section class="products-section" aria-labelledby="products">
+        <div class="section-heading">
+          <h2 id="products">Products</h2>
+          <p>
+            Browse our products to see what you like and what you absolutely
+            cannot live without. When it comes to unicorns, you can never have
+            too much whimsy.
+          </p>
+        </div>
 
-<div class="product-flex">
-<!-- toys -->
-  <a target="_blank" href="./assets/images/whiteplushsmall.jpg">
-    <figure class="product1">
-      <img src="./assets/images/whiteplushsmall2.jpg" alt="a white plush unicorn" >
-      <figcaption>White Plush Unicorn $10</figcaption>
-    </figure>
-  </a>
+        <div class="product-flex">
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/whiteplush.jpg"
+          >
+            <figure class="product-card product1">
+              <img
+                src="./assets/images/whiteplushsmall2.jpg"
+                alt="A white plush unicorn"
+                loading="lazy"
+              />
+              <figcaption>White Plush Unicorn <span>$10</span></figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/pinkplushsmall.jpg">
-    <figure class="product2">
-      <img src="./assets/images/pinkplushsmall2.jpg" alt="a big eyed pink plush unicorn">
-      <figcaption>Pink Plush Unicorn $10</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/pinkplushsmall.jpg"
+          >
+            <figure class="product-card product2">
+              <img
+                src="./assets/images/pinkplushsmall2.jpg"
+                alt="A big-eyed pink plush unicorn"
+                loading="lazy"
+              />
+              <figcaption>Pink Plush Unicorn <span>$10</span></figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/coloringbooksmall.jpg">
-    <figure class="product9">
-      <img src="./assets/images/coloringbooksmall2.jpg" alt="children coloring a unicorn picture">
-      <figcaption>Unicorn Coloring Pages $5</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/coloringbooksmall.jpg"
+          >
+            <figure class="product-card product9">
+              <img
+                src="./assets/images/coloringbooksmall2.jpg"
+                alt="Children coloring a unicorn picture"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Coloring Pages <span>$5</span></figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/stickers.jpg">
-    <figure class="product10">
-      <img src="./assets/images/stickerssmall2.jpg" alt="a unicorn sticker">
-      <figcaption>Unicorn Sticker Set $5</figcaption>
-    </figure>
-  </a>
+          <a target="_blank" rel="noopener" href="./assets/images/stickers.jpg">
+            <figure class="product-card product10">
+              <img
+                src="./assets/images/stickerssmall2.jpg"
+                alt="A unicorn sticker"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Sticker Set <span>$5</span></figcaption>
+            </figure>
+          </a>
 
+          <a target="_blank" rel="noopener" href="./assets/images/dessert2.jpg">
+            <figure class="product-card product3">
+              <img
+                src="./assets/images/dessert2small2.jpg"
+                alt="Pink frosted cupcakes"
+                loading="lazy"
+              />
+              <figcaption>Pink Unicorn Cupcake Mix <span>$15</span></figcaption>
+            </figure>
+          </a>
 
-<!-- food -->
-<a target="_blank" href="./assets/images/dessert2.jpg">
-    <figure class="product3">
-      <img src="./assets/images/dessert2small2.jpg" alt="pink frosted cupcakes">
-      <figcaption>Unicorn Cupcake Mix, Pink (frosting included) $15</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/dessert3small.jpg"
+          >
+            <figure class="product-card product8">
+              <img
+                src="./assets/images/dessert3small2.jpg"
+                alt="Yellow frosted cupcakes"
+                loading="lazy"
+              />
+              <figcaption>
+                Yellow Unicorn Cupcake Mix <span>$15</span>
+              </figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/dessert3small.jpg">
-    <figure class="product8">
-      <img src="./assets/images/dessert3small2.jpg" alt="yellow frosted cupcakes">
-      <figcaption>Unicorn Cupcake Mix, Yellow (frosting included) $15</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/unicorncandy.jpg"
+          >
+            <figure class="product-card product11">
+              <img
+                src="./assets/images/unicorncandysmall2.jpg"
+                alt="Assorted unicorn candy"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Candy, Assorted <span>$5</span></figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/unicorncandy.jpg">
-    <figure class="product11">
-      <img src="./assets/images/unicorncandysmall2.jpg" alt="unicorn candy">
-      <figcaption>Unicorn Candy, Assorted $5</figcaption>
-    </figure>
-  </a>
+          <a target="_blank" rel="noopener" href="./assets/images/unicorn.jpg">
+            <figure class="product-card product15">
+              <img
+                src="./assets/images/unicornfrostingsmall2.jpg"
+                alt="Swirled unicorn icing"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Icing Mix <span>$5</span></figcaption>
+            </figure>
+          </a>
 
-  <a target="_blank" href="./assets/images/unicorn.jpg">
-    <figure class="product15">
-      <img src="./assets/images/unicornfrostingsmall2.jpg" alt="swirled icing">
-      <figcaption>Unicorn Icing Mix $5</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/partyspread.jpg"
+          >
+            <figure class="product-card product4">
+              <img
+                src="./assets/images/partyspreadsmall2.jpg"
+                alt="A complete unicorn party spread"
+                loading="lazy"
+              />
+              <figcaption>
+                Complete Unicorn Party Spread <span>$150</span>
+              </figcaption>
+            </figure>
+          </a>
 
-<a target="_blank" href="./assets/images/partyspread.jpg">
-    <figure class="product4">
-      <img src="./assets/images/partyspreadsmall2.jpg" alt="unicorn party spread">
-      <figcaption>Complete Unicorn Party Spread $150</figcaption>
-    </figure>
-  </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/alicornhorn.jpg"
+          >
+            <figure class="product-card product5">
+              <img
+                src="./assets/images/alicornhornsmall2.jpg"
+                alt="A horse wearing a unicorn horn"
+                loading="lazy"
+              />
+              <figcaption>Alicorn <span>$8</span></figcaption>
+            </figure>
+          </a>
 
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/petcostume.jpg"
+          >
+            <figure class="product-card product6">
+              <img
+                src="./assets/images/petcostumesmall2.jpg"
+                alt="A pug dressed as a unicorn"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Pet Costume <span>$10</span></figcaption>
+            </figure>
+          </a>
 
+          <a target="_blank" rel="noopener" href="./assets/images/slippers.jpg">
+            <figure class="product-card product12">
+              <img
+                src="./assets/images/slipperssmall2.jpg"
+                alt="Unicorn slippers"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Slippers <span>$18</span></figcaption>
+            </figure>
+          </a>
 
-<!-- costumes and clothes -->
-<a target="_blank" href="./assets/images/alicornhorn.jpg">
-    <figure class="product5">
-      <img src="./assets/images/alicornhornsmall2.jpg" alt="a horse wearing an alicorn">
-      <figcaption>Alicorn $8</figcaption>
-    </figure>
-  </a>
+          <a target="_blank" rel="noopener" href="./assets/images/tent.jpg">
+            <figure class="product-card product7">
+              <img
+                src="./assets/images/tentsmall2.jpg"
+                alt="A decorated unicorn tent"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Tent <span>$15</span></figcaption>
+            </figure>
+          </a>
 
-<a target="_blank" href="./assets/images/petcostume.jpg">
-  <figure class="product6">
-    <img src="./assets/images/petcostumesmall2.jpg" alt="a pug dressed as a unicorn">
-    <figcaption>Unicorn Pet Costume $10</figcaption>
-  </figure>
-</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/lawnsculpture.jpg"
+          >
+            <figure class="product-card product13">
+              <img
+                src="./assets/images/lawnsculpturesmall2.jpg"
+                alt="A unicorn lawn sculpture"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Lawn Sculpture <span>$50</span></figcaption>
+            </figure>
+          </a>
 
-<a target="_blank" href="./assets/images/slippers.jpg">
-  <figure class="product12">
-    <img src="./assets/images/slipperssmall2.jpg" alt="unicorn slippers">
-    <figcaption>Unicorn Slippers $18</figcaption>
-  </figure>
-</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/poolfloatie.jpg"
+          >
+            <figure class="product-card product14">
+              <img
+                src="./assets/images/poolfloatiesmall2.jpg"
+                alt="A unicorn pool float"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Pool Float <span>$8</span></figcaption>
+            </figure>
+          </a>
 
+          <a target="_blank" rel="noopener" href="./assets/images/ceramic.jpg">
+            <figure class="product-card product16">
+              <img
+                src="./assets/images/ceramicsmall2.jpg"
+                alt="A ceramic unicorn"
+                loading="lazy"
+              />
+              <figcaption>Ceramic Unicorn <span>$10</span></figcaption>
+            </figure>
+          </a>
 
-<!-- outdoors -->
-<a target="_blank" href="./assets/images/tent.jpg">
-  <figure class="product7">
-    <img src="./assets/images/tentsmall2.jpg" alt="a decorated tent">
-    <figcaption>Unicorn Tent $15</figcaption>
-  </figure>
-</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/greetingcard.jpg"
+          >
+            <figure class="product-card product17">
+              <img
+                src="./assets/images/greetingcardsmall2.jpg"
+                alt="A magical Mother's Day card"
+                loading="lazy"
+              />
+              <figcaption>Greeting Card Set <span>$8</span></figcaption>
+            </figure>
+          </a>
 
-<a target="_blank" href="./assets/images/lawnsculpture.jpg">
-  <figure class="product13">
-    <img src="./assets/images/lawnsculpturesmall2.jpg" alt="unicorn lawn sculpture">
-    <figcaption>Unicorn Lawn Sculpture $50</figcaption>
-  </figure>
-</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/oraclecards.jpg"
+          >
+            <figure class="product-card product18">
+              <img
+                src="./assets/images/oraclecardssmall2.jpg"
+                alt="A unicorn oracle card"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Oracle Deck <span>$25</span></figcaption>
+            </figure>
+          </a>
 
-<a target="_blank" href="./assets/images/poolfloatie.jpg">
-  <figure class="product14">
-    <img src="./assets/images/poolfloatiesmall2.jpg" alt="unicorn pool floatie">
-    <figcaption>Unicorn Pool Floatie $8</figcaption>
-  </figure>
-</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="./assets/images/partypinata.jpg"
+          >
+            <figure class="product-card product19">
+              <img
+                src="./assets/images/partypinatasmall2.jpg"
+                alt="A unicorn pinata"
+                loading="lazy"
+              />
+              <figcaption>Unicorn Party Pinata <span>$5</span></figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
 
-<!-- misc -->
-<a target="_blank" href="./assets/images/ceramic.jpg">
-  <figure class="product16">
-    <img src="./assets/images/ceramicsmall2.jpg" alt="a ceramic unicorn">
-    <figcaption>Ceramic Unicorn $10</figcaption>
-  </figure>
-</a>
+      <section class="orders-section" aria-labelledby="orders">
+        <div class="section-heading">
+          <h2 id="orders">Place an Order</h2>
+          <p id="order-demo-note" class="demo-notice">
+            Interface demonstration only. Checkout is not active. Do not enter
+            real payment information.
+          </p>
+        </div>
 
-<a target="_blank" href="./assets/images/greetingcard.jpg">
-  <figure class="product17">
-    <img src="./assets/images/greetingcardsmall2.jpg" alt="magical mother's day card">
-    <figcaption>Greeting Card Set $8</figcaption>
-  </figure>
-</a>
+        <div class="checkout-layout">
+          <div class="checkout-panel">
+            <form
+              id="checkout-form"
+              autocomplete="off"
+              aria-describedby="order-demo-note"
+            >
+              <div class="form-columns">
+                <fieldset>
+                  <legend>Billing Address</legend>
 
-<a target="_blank" href="./assets/images/oraclecards.jpg">
-  <figure class="product18">
-    <img src="./assets/images/oraclecardssmall2.jpg" alt="unicorn card">
-    <figcaption>Unicorn Oracle Deck $25</figcaption>
-  </figure>
-</a>
+                  <label for="fname">Full Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="John M. Doe"
+                  />
 
-<a target="_blank" href="./assets/images/partypinata.jpg">
-<figure class="product19">
-<img src="./assets/images/partypinatasmall2.jpg" alt="unicorn pinata">
-<figcaption>Unicorn Party Pinata $5</figcaption>
-</figure>
-</a>
-  </div>
-<!-- place an order section -->
-<h2 id="orders">Place an Order</h2>
+                  <label for="billing-email">Email</label>
+                  <input
+                    type="email"
+                    id="billing-email"
+                    name="billing-email"
+                    placeholder="john@example.com"
+                  />
 
-<!-- start of  -->
-<div class="row">
-    <div class="col-75">
-      <div class="container">
-        <!-- You needed to put your action="#" as action="https://www.freecodecamp.com/email-submit" -->
-        <form action="#" id="form">
-        
-          <div class="row">
-            <div class="col-50">
-              <h3>Billing Address</h3>
-              <label for="fname"> Full Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-              <label for="email">&#9993; Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com">
-              <label for="adr"> Address</label>
-              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-              <label for="city"> City</label>
-              <input type="text" id="city" name="city" placeholder="New York">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="state">State</label>
-                  <input type="text" id="state" name="state" placeholder="NY">
-                </div>
-                <div class="col-50">
-                  <label for="zip">Zip</label>
-                  <input type="text" id="zip" name="zip" placeholder="10001">
-                </div>
+                  <label for="adr">Address</label>
+                  <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="542 W. 15th Street"
+                  />
+
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="New York"
+                  />
+
+                  <div class="form-row">
+                    <div>
+                      <label for="state">State</label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="NY"
+                      />
+                    </div>
+                    <div>
+                      <label for="zip">ZIP</label>
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        inputmode="numeric"
+                        placeholder="10001"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Payment Demo</legend>
+
+                  <label for="cname">Name on Card</label>
+                  <input
+                    type="text"
+                    id="cname"
+                    name="cardname"
+                    placeholder="John M. Doe"
+                  />
+
+                  <label for="ccnum">Demo Card Number</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    inputmode="numeric"
+                    placeholder="1111-2222-3333-4444"
+                  />
+
+                  <label for="expmonth">Expiration Month</label>
+                  <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="September"
+                  />
+
+                  <div class="form-row">
+                    <div>
+                      <label for="expyear">Expiration Year</label>
+                      <input
+                        type="text"
+                        id="expyear"
+                        name="expyear"
+                        inputmode="numeric"
+                        placeholder="2030"
+                      />
+                    </div>
+                    <div>
+                      <label for="cvv">Demo CVV</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        name="cvv"
+                        inputmode="numeric"
+                        placeholder="352"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
               </div>
-            </div>
-  
-            <div class="col-50">
-              <h3>Payment</h3>
-              <label for="cname">Name on Card</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-              <label for="ccnum">Credit card number</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
-              <label for="expmonth">Exp Month</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Exp Year</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2018" required>
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352" required>
-                </div>
-              </div>
-            </div>
-            
+
+              <label class="checkbox-label">
+                <input type="checkbox" checked name="sameadr" />
+                Shipping address same as billing
+              </label>
+
+              <button type="button" class="btn">Checkout Demo</button>
+            </form>
           </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr">&#128230; Shipping address same as billing
-          </label>
-          <input type="submit" value="Continue to checkout" class="btn">
-        </form>
-</div>
-</div>
-<div class="col-25">
-    <div class="container">
-      <h4>Items in Cart: <span class="price" style="color:black"><b>4</b></span></h4>
-      <p><a target="_self" href="./assets/images/oraclecardssmall.jpg">Unicorn Oracle Deck</a> <span class="price">$25</span></p>
-      <p><a target="_self" href="./assets/images/partypinatasmall.jpg">Unicorn Pinata</a> <span class="price">$5</span></p>
-      <p><a target="_self" href="./assets/images/slipperssmall.jpg">Unicorn Slippers</a> <span class="price">$18</span></p>
-      <p><a target="_self" href="./assets/images/pinkplushsmall.jpg">Unicorn Plush Toy, Pink</a> <span class="price">$10</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>&#128178;58</b></span></p>
-    </div>
-  </div>
-</div>
+
+          <aside class="cart-panel" aria-labelledby="cart-heading">
+            <h3 id="cart-heading">Items in Cart <span>4</span></h3>
+            <ul>
+              <li><span>Unicorn Oracle Deck</span><strong>$25</strong></li>
+              <li><span>Unicorn Pinata</span><strong>$5</strong></li>
+              <li><span>Unicorn Slippers</span><strong>$18</strong></li>
+              <li><span>Pink Unicorn Plush Toy</span><strong>$10</strong></li>
+            </ul>
+            <p class="cart-total"><span>Total</span><strong>$58</strong></p>
+          </aside>
+        </div>
+      </section>
+    </main>
 
     <footer id="contacts">
+      <div class="container2">
+        <form id="form" aria-labelledby="contact-heading">
+          <h2 id="contact-heading" class="foot_h4">Contact Us</h2>
 
-        <div class="container2">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
 
-<form action="https://www.freecodecamp.com/email-submit" id="form"
->
-    <h4 class="foot_h4">Contact Us Here:</h4><br>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
+          <label class="checkbox-label" for="unicorn">
+            <input
+              type="checkbox"
+              name="unicorn"
+              id="unicorn"
+              onclick="playAudio()"
+            />
+            Join the Unicorn Superstore Club
+          </label>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="email" required>
+          <audio id="noise" preload="auto">
+            <source src="./assets/audio/fairydust.wav" type="audio/wav" />
+          </audio>
 
-    <label for="checkbox">Click here to become a Unicorn Superstore Club Member </label>
-
-    <audio id="noise">
-        <source src="./assets/audio/fairydust.wav" type="audio/wav" >
-    </audio>
-    <input type="checkbox" name="unicorn" id="unicorn" onclick="playAudio()">
-
-    <button type="submit" id="submit" >Submit</button>
-</div>
-
-</form>
+          <button type="button" id="submit">Submit Demo</button>
+        </form>
+      </div>
     </footer>
+
     <script src="./assets/scripts/script.js"></script>
-</body>
+  </body>
 </html>
